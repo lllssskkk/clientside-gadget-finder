@@ -90,50 +90,7 @@
         devShells.default = devShell;
         packages.default = runScript;
         apps.default = flake-utils.lib.mkApp { drv = runScript; };
-        # packages = {
-        #   default = runScript; # <-- must exist
-        #   chromium-ghunter = chromium-ghunter.chromium-ghunter;
-        #   chromium-ghunter-unwrapped = chromium-ghunter.chromium-ghunter-unwrapped;
-        # };
       }
     );
 }
-# let
-#   allSystems = ["x86_64-linux" "aarch64-linux" "i686-linux"];
 
-#   genPackages = system: let
-#     pkgs = import nixpkgs {
-#       inherit system;
-#     };
-#     inherit (pkgs) lib;
-#     inherit (lib) nameValuePair;
-#   in
-#     nameValuePair system (let
-#       chromium-ghunter = pkgs.callPackage ./nix/chromium-ghunter {};
-#     in {
-#       inherit (chromium-ghunter) chromium-ghunter chromium-ghunter-unwrapped;
-#       inherit pkgs;
-#     });
-
-#   genDevShells = system: let
-#     inherit (selfPkgs) pkgs;
-#     selfPkgs = self.packages.${system};
-#   in
-#     pkgs.lib.nameValuePair system {
-#       default = pkgs.mkShell {
-#         buildInputs = with pkgs; [
-#           cargo
-#           rustc
-#           rustfmt
-#           rust-analyzer
-#           clippy
-
-#           selfPkgs.chromium-ghunter
-#         ];
-#       };
-#     };
-# in {
-#   # only x86_64-linux has been tested
-#   packages = builtins.listToAttrs (map genPackages allSystems);
-#   devShells = builtins.listToAttrs (map genDevShells allSystems);
-# };
