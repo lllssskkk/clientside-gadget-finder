@@ -8,11 +8,8 @@ anyhow = "1.0.95"
 async-std = "1.13.0"
 chromiumoxide = { git = "https://github.com/mattsse/chromiumoxide", rev = "6f2392f78ae851e2acf33df8e9764cc299d837db" }
 clap = { version = "4.5.26", features = ["derive", "env"] }
-serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0.137"
 tempdir = "0.3.7"
 tracing = "0.1.41"
 tracing-subscriber = "0.3.19"
 which = "7.0.1"
-regex = "1.11.1"
-
