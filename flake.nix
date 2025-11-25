@@ -81,7 +81,7 @@
           text = ''
             exec ${project}/bin/ghunter4chromium-gadget-finder \
               --chromium-executable ${chromium4ghunter.packages.${system}.default}/bin/chromium-ghunter \
-              --url "$@"
+              "$@" 
           '';
         };
 
