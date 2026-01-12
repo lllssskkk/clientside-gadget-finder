@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:Nixos/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
-    chromium4ghunter.url = "git+ssh://git@github.com/lllssskkk/chromium4ghunter.git";
+    chromium4ghunter.url = "github:lllssskkk/chromium4ghunter.git";
   };
   outputs =
     {
