@@ -2,17 +2,17 @@
   "nodes": {
     "chromium-v130": {
       "locked": {
-        "lastModified": 1729209416,
-        "narHash": "sha256-j97p0vFx3BxwH3rwXCWweg9enorsl7F1e/Dn8xsNhzM=",
+        "lastModified": 1729880355,
+        "narHash": "sha256-RP+OQ6koQQLX5nw0NmcDrzvGL8HDLnyXt/jHhL1jwjM=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "b71ae2d9501c687ab40e784d209e813df2259f2d",
+        "rev": "18536bf04cd71abd345f9579158841376fdd0c5a",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "b71ae2d9501c687ab40e784d209e813df2259f2d",
+        "rev": "18536bf04cd71abd345f9579158841376fdd0c5a",
         "type": "github"
       }
     },
@@ -23,17 +23,17 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1750235020,
-        "narHash": "sha256-zIia9v+Hg6n8SF7GcIkq+AZN1hmP8yA8s6bMGEjvhQI=",
-        "ref": "refs/heads/main",
-        "rev": "2a5696e7aa8024a6a14ba7c6896da74ef1c5984a",
-        "revCount": 1,
-        "type": "git",
-        "url": "ssh://git@github.com/lllssskkk/chromium4ghunter.git"
+        "lastModified": 1762775139,
+        "narHash": "sha256-GGHTzb5LRMhT7jPDW3JM5nYKKqVwW1qoOsgk7SocK/w=",
+        "owner": "lllssskkk",
+        "repo": "chromium4ghunter",
+        "rev": "3046c28f950bd7b9e0802e7b157341632975c3c4",
+        "type": "github"
       },
       "original": {
-        "type": "git",
-        "url": "ssh://git@github.com/lllssskkk/chromium4ghunter.git"
+        "owner": "lllssskkk",
+        "repo": "chromium4ghunter",
+        "type": "github"
       }
     },
     "flake-utils": {
